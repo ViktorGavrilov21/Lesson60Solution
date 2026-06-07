@@ -8,7 +8,7 @@ int main() {
 
 	cout << "Before: x = " << x << ", y = " << y << endl;
 
-	swapping(&x, &y);
+	swapping(x, y);
 
 	cout << "After: x = " << x << ", y = " << y << endl;
 

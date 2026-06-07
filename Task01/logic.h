@@ -1,1 +1,1 @@
-void swapping(int* a, int* b);
+void swapping(int& a, int& b);
