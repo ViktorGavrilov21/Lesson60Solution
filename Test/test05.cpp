@@ -2,27 +2,22 @@
 #include <iostream>
 using namespace std;
 
-
+//pointer(ptr)
 int main() {
-	bool* flag;
-	char* ch;
-	short* sh;
-	int* integer;
-	float* f;
-	long long* l;
-	double* d;
-	string* s;
-	void* v;
+	int* ptr_number = new int;
+	double* ptr_cost = new double;
 
-	cout << "Size of bool*: " << sizeof(flag) << " byte.\n";
-	cout << "Size of char*: " << sizeof(ch) << " bytes.\n";
-	cout << "Size of short*: " << sizeof(sh) << " bytes.\n";
-	cout << "Size of int*: " << sizeof(integer) << " bytes.\n";
-	cout << "Size of float*: " << sizeof(f) << " bytes.\n";
-	cout << "Size of long long*: " << sizeof(l) << " bytes.\n";
-	cout << "Size of double*: " << sizeof(d) << " bytes.\n";
-	cout << "Size of string*: " << sizeof(s) << " bytes.\n";
-	cout << "Size of void*: " << sizeof(v) << " bytes.\n";
+	*ptr_number = 10;
+	*ptr_cost = 2.5;
+
+	cout << "Size of int*: " << sizeof(ptr_number) 
+		<< " bytes, @ = " << ptr_number << ", value: " << *ptr_number << "\n";
+
+	cout << "Size of double*: " << sizeof(ptr_cost)
+		<< " bytes, @ = " << ptr_cost << ", value: " << *ptr_cost << "\n";
+
+	delete ptr_number;
+	delete ptr_cost;
 
 
 	return 0;
