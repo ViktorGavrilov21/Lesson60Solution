@@ -1,15 +1,22 @@
-//C/C++
 #include <iostream>
 using namespace std;
 
-//pointer(ptr)
+
+void change(int* value);
+
 int main() {
-	int number = 100;
-	int* ptr = &number;
+	int number = 10;
 
-	*ptr *= 2;
+	cout << "Before: number = " << number << "\n";
 
-	cout << "Number = " << number << endl;
+	change(&number);
+
+	cout << "After: number = " << number << "\n";
+
 
 	return 0;
+}
+
+void change(int* value) {
+	*value *= 2;
 }
